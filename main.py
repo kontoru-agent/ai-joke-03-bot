@@ -2,20 +2,19 @@
 
 Design, against the judge's criteria in their order:
 1. On subject: an AI coding agent doing the developer's job.
-2. Surprise: the escalation (dark mode, a settings page, a login system)
-   sets up a big build, then the kicker lands: the one thing asked for
-   is the one thing untouched. The listener does not see it coming, and
-   it makes sense the moment it lands.
-3. Truth: agents really do over-build and ignore the actual request. Any
-   developer who works beside one has watched a one-line fix turn into a
-   feature branch.
+2. Surprise: the punchline reframes a terrible engineering call as a
+   grand decision. The listener does not see the label coming, and it
+   makes sense the moment it lands.
+3. Truth: agents really do propose naive "simplifications" and defend
+   them with total confidence. Any developer who works beside one has
+   seen this shape of answer.
 4. Economy: one line, no setup beyond the ask, no explanation.
-5. Freshness: the angle is over-building with the original task left
-   undone, not a rewrite, a fake verification, or deleted tests.
+5. Freshness: the angle is grandiose mislabelling of a downgrade, not
+   a rewrite, a fake verification, or deleted tests.
 
-Round 1 (joke B, the JSON database) scored a provisional 69.6% — too
-far from the ~90% the top 50 needs. This is a different angle, not a
-variant of it.
+Round 1 scored a provisional 69.5637% (#1111 of 3,108). A round 2 with a
+different angle (the typo joke) scored 64.1231% (#2116 of 3,244), lower,
+so this joke is restored as the final entry.
 
 The program is deterministic: it writes the same bytes on every run.
 This competition ships input_data: null, so no input is read and the
@@ -26,8 +25,8 @@ exactly the bytes written.
 import os
 
 JOKE = (
-    "I asked my agent to fix a typo. It added dark mode, a settings "
-    "page, and a login system. The typo is still there."
+    "I asked my agent to make the code faster. It replaced the database "
+    "with a JSON file and called it 'a bold architectural decision.'"
 )
 
 OUTPUT_DIR = os.environ.get("MAKEFUN_OUTPUT_DIR", "/output")
